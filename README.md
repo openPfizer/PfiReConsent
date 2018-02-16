@@ -7,6 +7,6 @@ Lightweight, in person, eConsent for clinical research written in Swift and usin
 daniel.karlin@pfizer.com, or open a GitHub issue
 
 ---
-Credit to @stefanluyten and his [parser script](https://github.com/stefanluyten/HealthKitExportParser)
+Credit folks who have asked questions and given great answers at StackOverfow on [ResearchKit] (https://stackoverflow.com/questions/tagged/researchkit) and [Swift] (https://stackoverflow.com/questions/tagged/swift)
 
 ![](osbypfizer.png)
