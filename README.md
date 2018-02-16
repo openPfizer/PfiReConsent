@@ -20,5 +20,5 @@ The maintainers of the box-ios-sdk repository https://github.com/box/box-ios-sdk
 
 Folks who have asked questions and given great answers at StackOverfow on ResearchKit https://stackoverflow.com/questions/tagged/researchkit and Swift https://stackoverflow.com/questions/tagged/swift
 
-![](/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@3x.png)
+![](/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@1x.png)
 ![](osbypfizer.png)
