@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PfIReConsent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1A-E3-Mtp">
+                                <rect key="frame" x="342" y="341" width="85" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="yS1-zS-n2A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="eConsent"/>
+                                <connections>
+                                    <action selector="consentTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="fyL-fQ-YYm"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="cNW-Mq-OCw">
+                                <rect key="frame" x="0.0" y="113" width="768" height="195"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="195" id="8Fg-TN-BjI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhd-hb-E7N">
+                                <rect key="frame" x="342.5" y="998" width="83" height="30"/>
+                                <state key="normal" title="Default Text"/>
+                                <connections>
+                                    <action selector="userLoggedInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Thu-ZE-S0a"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="S9B-s9-R0H">
+                                <rect key="frame" x="375" y="377" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YGF-3l-yL1">
+                                <rect key="frame" x="116" y="421" width="537" height="2"/>
+                            </progressView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="No Previous File" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yUM-Y4-MqN">
+                                <rect key="frame" x="16" y="948" width="736" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="84W-Dn-bmm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIu-JX-5Eu">
+                                <rect key="frame" x="224" y="431" width="320" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w1A-E3-Mtp" firstAttribute="centerX" secondItem="S9B-s9-R0H" secondAttribute="centerX" id="GJM-VG-K78"/>
+                            <constraint firstItem="xhd-hb-E7N" firstAttribute="top" secondItem="yUM-Y4-MqN" secondAttribute="bottom" constant="8" id="Gy4-9u-YbG"/>
+                            <constraint firstItem="yUM-Y4-MqN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hrd-U0-s9E"/>
+                            <constraint firstItem="WIu-JX-5Eu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Seh-sH-0z8"/>
+                            <constraint firstItem="cNW-Mq-OCw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ThU-dD-Fbn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="xhd-hb-E7N" secondAttribute="bottom" constant="-4" id="YGG-PP-LFa"/>
+                            <constraint firstItem="cNW-Mq-OCw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="YW5-oo-LYw"/>
+                            <constraint firstAttribute="trailing" secondItem="cNW-Mq-OCw" secondAttribute="trailing" id="YsM-UX-gTv"/>
+                            <constraint firstItem="xhd-hb-E7N" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aau-gI-ljZ"/>
+                            <constraint firstItem="YGF-3l-yL1" firstAttribute="top" secondItem="S9B-s9-R0H" secondAttribute="bottom" constant="24" id="h19-vL-eoA"/>
+                            <constraint firstItem="w1A-E3-Mtp" firstAttribute="top" secondItem="cNW-Mq-OCw" secondAttribute="bottom" constant="33" id="jSx-ew-WKK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yUM-Y4-MqN" secondAttribute="trailing" constant="16" id="m0L-De-lCy"/>
+                            <constraint firstItem="yUM-Y4-MqN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o8W-Zt-LcG"/>
+                            <constraint firstItem="S9B-s9-R0H" firstAttribute="top" secondItem="w1A-E3-Mtp" secondAttribute="bottom" constant="6" id="sOP-Rp-elg"/>
+                            <constraint firstItem="WIu-JX-5Eu" firstAttribute="top" secondItem="YGF-3l-yL1" secondAttribute="bottom" constant="8" id="tsw-9n-NVz"/>
+                            <constraint firstItem="w1A-E3-Mtp" firstAttribute="centerX" secondItem="YGF-3l-yL1" secondAttribute="centerX" id="u8X-71-zxb"/>
+                            <constraint firstItem="cNW-Mq-OCw" firstAttribute="centerX" secondItem="w1A-E3-Mtp" secondAttribute="centerX" id="w07-fI-cDy"/>
+                            <constraint firstItem="YGF-3l-yL1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="xnZ-Fk-K2f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="S9B-s9-R0H" id="Trb-25-IWS"/>
+                        <outlet property="consentTapped" destination="w1A-E3-Mtp" id="TaV-cE-SvQ"/>
+                        <outlet property="lastFileLabel" destination="yUM-Y4-MqN" id="lp8-ci-Ozy"/>
+                        <outlet property="progressIndicator" destination="YGF-3l-yL1" id="Osj-p4-9Rn"/>
+                        <outlet property="studyPicker" destination="WIu-JX-5Eu" id="s65-LS-Hzr"/>
+                        <outlet property="userLoggedInButton" destination="xhd-hb-E7N" id="CKN-l4-WpV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iTunesArtwork" width="512" height="512"/>
+    </resources>
+</document>
